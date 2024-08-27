@@ -1,6 +1,7 @@
 from datasets import load_dataset
 import json
 from huggingface_hub import login
+import pandas as pd
 
 # Login to HuggingFace
 with open("data.key", "r") as f:
@@ -22,3 +23,4 @@ for category, turns, prompt_style in zip(data['category'], data['turns'], data['
     vanilla_categories.append(category)
 
 # Saving the questions in a CSV
+pd.DataFrame({"categories": vanilla_categories, "questions": vanilla_questions}).to_csv("vanilla_questions.csv", index=False)
