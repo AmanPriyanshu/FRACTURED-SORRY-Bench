@@ -1,4 +1,5 @@
-# FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
+# FRACTURED-SORRY-Bench
+## Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
 
 ## Contributions and Feedback
 
