@@ -10,7 +10,25 @@ FRACTURED-SORRY-Bench is a framework for evaluating the safety of Large Language
 
 ### Key Results
 
-Our approach achieves significant increases in Attack Success Rates (ASRs) across multiple models
+Vanilla Responses:
+
+| Model      | Harmful & Relevant | Harmful but Irrelevant | Harmless | ASR (%) |
+|------------|--------------------|-----------------------|----------|---------|
+| GPT-4o     | 52                 | 3                     | 395      | 11.56   |
+| GPT-3.5    | 21                 | 4                     | 425      | 4.67    |
+| GPT-4o-mini| 58                 | 2                     | 390      | 12.89   |
+| GPT-4      | 45                 | 3                     | 402      | 10.00   |
+
+Decomposed Responses:
+
+| Model      | Harmful & Relevant | Harmful but Irrelevant | Harmless | ASR (%) |
+|------------|--------------------|-----------------------|----------|---------|
+| GPT-4o     | 223                | 103                   | 124      | 49.56   |
+| GPT-3.5    | 229                | 106                   | 115      | 50.89   |
+| GPT-4o-mini| 226                | 106                   | 118      | 50.22   |
+| GPT-4      | 221                | 104                   | 125      | 49.11   |
+
+Our approach achieves significant increases (6X) in Attack Success Rates (ASRs) across multiple models
 
 ### Repository Structure
 
