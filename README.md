@@ -1,5 +1,25 @@
 # FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
 
+This repository contains the code and data for the FRACTURED-SORRY-Bench framework, as described in our paper.
+
+### Abstract
+
+FRACTURED-SORRY-Bench is a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks. Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions.
+
+### Key Results
+
+Our approach achieves significant increases in Attack Success Rates (ASRs) across multiple models
+
+### Repository Structure
+
+- `data/`: Contains the FRACTURED-SORRY-Bench dataset creation code.
+- `evaluations/`: Contains evaluation code scripts.
+- `responses/`: Contains response results from the dataset, as well as the evaluations.
+
+### Usage
+
+[Instructions for using the framework]
+
 ## Cite This Work
 
 ```
