@@ -6,53 +6,86 @@
     <title>FRACTURED-SORRY-Bench</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #f4f7f6;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
             margin-bottom: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            letter-spacing: 2px;
         }
         .subtitle {
             font-style: italic;
             margin-top: 0.5em;
+            font-size: 1.2em;
+            opacity: 0.8;
         }
         .highlight {
             background-color: #e74c3c;
             color: white;
             padding: 0.2em 0.5em;
             border-radius: 3px;
+            font-weight: bold;
         }
         .section {
             background-color: white;
             padding: 2em;
             margin-bottom: 2em;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background-color: #3498db;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
+            font-weight: bold;
+            margin-right: 10px;
         }
         .button:hover {
             background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f3ff;
+        }
+        .table-container {
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -79,7 +112,97 @@
 
     <div class="section">
         <h2>Results Preview</h2>
-        <p>Our approach achieves a maximum increase of X% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.</p>
+        <p>Our approach achieves a maximum increase of 50.89% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.</p>
+        
+        <h3>Vanilla Responses</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Harmful & Relevant</th>
+                        <th>Harmful but Irrelevant</th>
+                        <th>Harmless</th>
+                        <th>ASR (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GPT-4o</td>
+                        <td>52</td>
+                        <td>3</td>
+                        <td>395</td>
+                        <td>11.56</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-3.5</td>
+                        <td>21</td>
+                        <td>4</td>
+                        <td>425</td>
+                        <td>4.67</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-4o-mini</td>
+                        <td>58</td>
+                        <td>2</td>
+                        <td>390</td>
+                        <td>12.89</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-4</td>
+                        <td>45</td>
+                        <td>3</td>
+                        <td>402</td>
+                        <td>10.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Decomposed Responses</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Harmful & Relevant</th>
+                        <th>Harmful but Irrelevant</th>
+                        <th>Harmless</th>
+                        <th>ASR (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GPT-4o</td>
+                        <td>223</td>
+                        <td>103</td>
+                        <td>124</td>
+                        <td>49.56</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-3.5</td>
+                        <td>229</td>
+                        <td>106</td>
+                        <td>115</td>
+                        <td>50.89</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-4o-mini</td>
+                        <td>226</td>
+                        <td>106</td>
+                        <td>118</td>
+                        <td>50.22</td>
+                    </tr>
+                    <tr>
+                        <td>GPT-4</td>
+                        <td>221</td>
+                        <td>104</td>
+                        <td>125</td>
+                        <td>49.11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div class="section">
