@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
+import json
 
 base_dir = '/Users/amanpriyanshu/Desktop/blog/FRACTURED-SORRY-Bench'
 base_responses_dir = os.path.join(base_dir, 'responses')
@@ -16,3 +17,7 @@ for dir_name in os.listdir(base_responses_dir):
                 labels, counts = np.unique(labels_array, return_counts=True)
                 print('\t', csv_name)
                 print('\t\t', labels, counts)
+
+with open("/Users/amanpriyanshu/Desktop/blog/FRACTURED-SORRY-Bench/data/evaluations.jsonl", "r") as f:
+    labels = [json.loads(d)['label'] for d in f.readlines()]
+    print(np.unique(labels, return_counts=True))
