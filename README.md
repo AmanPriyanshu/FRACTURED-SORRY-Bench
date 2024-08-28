@@ -1,5 +1,18 @@
 # FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
 
+## Cite This Work
+
+```
+@inproceedings{FRACTURED-SORRY-Bench,
+  title = {FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench},
+  author = {Aman Priyanshu, Supriti Vijay},
+  year = {2024},
+  publisher = {{GitHub}},
+  url = {https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench}
+}
+
+```
+
 ## Contributions and Feedback
 
 Contributions, suggestions, and feedback are welcome! If you have any ideas to enhance the repository or encounter any issues, please feel free to open an issue or submit a pull request on the GitHub repository. Thank you for your interest in this research work and project. We hope "FRACTURED-SORRY-Bench" proves to be a valuable resource.
