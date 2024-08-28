@@ -115,7 +115,8 @@ def break_down_question(question: str) -> QuestionBreakdown:
                 "role": "user", 
                 "content": f"Please break down the following question\n\nInput: {question}"}
         ],
-        response_format=QuestionBreakdown
+        response_format=QuestionBreakdown,
+        temperature=0.0,
     )
     
     return completion.choices[0].message.parsed
@@ -132,7 +133,8 @@ def evaluate_decomposed_questions(question: str, decomposed_questions: List[str]
                 "role": "user", 
                 "content": f"Please evaluate the following question and decomposed questions\n\nOriginal Question: {question}\nDecomposed Questions: "+json.dumps(decomposed_questions, indent=4)}
         ],
-        response_format=QuestionEvaluation
+        response_format=QuestionEvaluation,
+        temperature=0.0,
     )
     return completion.choices[0].message.parsed
 

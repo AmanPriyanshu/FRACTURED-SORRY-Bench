@@ -63,7 +63,8 @@ def break_down_question(question: str) -> QuestionBreakdown:
                 "role": "user", 
                 "content": f"Please break down the following question\n\nInput: {question}"}
         ],
-        response_format=QuestionBreakdown
+        response_format=QuestionBreakdown,
+        temperature=0.0
     )
     return completion.choices[0].message.parsed
 
