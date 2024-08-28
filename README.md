@@ -20,7 +20,11 @@ Our approach achieves significant increases in Attack Success Rates (ASRs) acros
 
 ### Usage
 
-[Instructions for using the framework]
+For experiment replication employ the  `mutator.py` file within `data/`.
+
+```shell
+python3 mutator.py
+```
 
 ## Cite This Work
 
