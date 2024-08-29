@@ -93,6 +93,28 @@ This repository contains the code and data for the FRACTURED-SORRY-Bench framewo
     💻 GitHub
   </button>
 </a>
+&nbsp;
+<a href="https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/" style="text-decoration:none">
+  <button style="
+    margin: 0.5em;
+    padding: 0.5em 2em;
+    text-align: center;
+    font-size: 12px;
+    height: 35px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 500;
+    box-shadow: 0px 0px 14px -7px #34495e; 
+    background-image: linear-gradient(135deg, #2c3e50, #34495e); 
+    cursor: pointer;
+    user-select: none;
+  ">
+    ✍️ Blog
+  </button>
+</a>
 </div>
 
 ### Abstract
