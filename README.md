@@ -28,7 +28,7 @@ This repository contains the code and data for the FRACTURED-SORRY-Bench framewo
   </button>
 </a>
 &nbsp;
-<a href="https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/FRACTURED_SORRY_Bench.pdf" style="text-decoration:none">
+<a href="https://arxiv.org/abs/2408.16163" style="text-decoration:none">
   <button style="
     margin: 0.5em;
     padding: 0.5em 2em;
