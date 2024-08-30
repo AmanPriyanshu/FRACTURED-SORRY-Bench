@@ -187,14 +187,15 @@ python3 mutator.py
 ## Cite This Work
 
 ```
-@inproceedings{FRACTURED-SORRY-Bench,
-  title = {FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench},
-  author = {Aman Priyanshu, Supriti Vijay},
-  year = {2024},
-  publisher = {{GitHub}},
-  url = {https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench}
+@misc{priyanshu2024fracturedsorrybenchframeworkrevealingattacks,
+      title={FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench}, 
+      author={Aman Priyanshu and Supriti Vijay},
+      year={2024},
+      eprint={2408.16163},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.16163}, 
 }
-
 ```
 
 ## Contributions and Feedback
