@@ -4,6 +4,8 @@
 
 Due to similar names this is a placeholder.
 
+---
+
 ## Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench (Automated Multi-shot Jailbreaks)
 
 This repository contains the code and data for the FRACTURED-SORRY-Bench framework, as described in our paper.
